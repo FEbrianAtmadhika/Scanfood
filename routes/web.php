@@ -25,6 +25,8 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/upload',[imageController::class, 'upload'])->name('upload');
     Route::post('/deteksi',[imageController::class, 'deteksi'])->name('deteksi');
     Route::get('/Result',[imageController::class, 'result'])->name('result');
-    Route::get('/detail/{id}',[imageController::class, 'detail'])->name('detail');
+    Route::get('/history',[Controller::class,'history'])->name('history');
+    Route::get('/detail/{id}',[Controller::class, 'detail'])->name('detail');
+    Route::get('/delete/{id}',[Controller::class,'destroy'])->name('hapus');
     Route::get('/logout',[UserController::class, 'logout_submit'])->name('logout');
 });

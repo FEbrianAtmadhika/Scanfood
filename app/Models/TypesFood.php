@@ -9,7 +9,7 @@ class TypesFood extends Model
 {
     use HasFactory;
 
-    protected $table=['typesfood'];
+    protected $table='typesfood';
 
     protected $fillable=['nama_jenis'];
 

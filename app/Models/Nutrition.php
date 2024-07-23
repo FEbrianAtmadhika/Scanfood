@@ -9,9 +9,9 @@ class Nutrition extends Model
 {
     use HasFactory;
 
-    protected $table=['nutritions'];
+    protected $table='nutritions';
 
-    protected $fillable=['id_makanan','berat','karbohidrat','energi','protein','lemak','Vit_A','Vit_B','Vit_C','Vit_D','Vit_E','Vit_K','Kalsium','Magnesium','Potasium','Zat_Besi','Zink','Tembaga','Selenium'];
+    protected $fillable=['id_makanan','berat','karbohidrat','energi','protein','lemak','Vit_A','Vit_B','Vit_C','Kalsium','Zat_Besi','Zink','Tembaga','serat','fosfor','air','natrium','kalium'];
 
 
     public function makanan()

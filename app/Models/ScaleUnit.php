@@ -9,7 +9,7 @@ class ScaleUnit extends Model
 {
     use HasFactory;
 
-    protected $table=['scaleunit'];
+    protected $table='scaleunit';
 
     protected $fillable=['image','satuan','jenis_makanan'];
 

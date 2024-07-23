@@ -1,0 +1,197 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Nutrition;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class Nutritions extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        Nutrition::create([
+            'id_makanan' => 0, // Pastikan ID ini sesuai dengan ID di tabel 'foods'
+            'berat' => 100,
+            'karbohidrat' => 6.80,
+            'energi' => 30,
+            'protein' => 0.5,
+            'lemak' => 0.2,
+            'Vit_A' => 0,
+            'Vit_B' => 0.01,
+            'Vit_C' => 3,
+            'Kalsium' => 39,
+            'Zat_Besi' => 1.10,
+            'Zink' => 0,
+            'Tembaga' => 0,
+            'serat' => 1.20,
+            'fosfor' => 12,
+            'air' => 92.30,
+            'natrium' => 0,
+            'kalium' => 0,
+        ]);
+        Nutrition::create([
+            'id_makanan' => 1, // Pastikan ID ini sesuai dengan ID di tabel 'foods'
+            'berat' => 100,
+            'karbohidrat' => 14.9,
+            'energi' => 58,
+            'protein' => 0.3,
+            'lemak' => 0.4,
+            'Vit_A' => 0,
+            'Vit_B' => 0.17,
+            'Vit_C' => 5,
+            'Kalsium' => 6,
+            'Zat_Besi' => 0.3,
+            'Zink' => 0.3,
+            'Tembaga' => 124200,
+            'serat' => 2.60,
+            'fosfor' => 10,
+            'air' => 84.10,
+            'natrium' => 2,
+            'kalium' => 130,
+        ]);
+        Nutrition::create([
+            'id_makanan' => 2, // Pastikan ID ini sesuai dengan ID di tabel 'foods'
+            'berat' => 100,
+            'karbohidrat' => 0.5,
+            'energi' => 283,
+            'protein' => 35.70,
+            'lemak' => 14.30,
+            'Vit_A' => 11,
+            'Vit_B' => 0.36,
+            'Vit_C' => 0,
+            'Kalsium' => 68,
+            'Zat_Besi' => 5.40,
+            'Zink' => 0,
+            'Tembaga' => 0,
+            'serat' => 0,
+            'fosfor' => 106,
+            'air' => 46,
+            'natrium' => 0,
+            'kalium' => 0,
+        ]);
+        Nutrition::create([
+            'id_makanan' => 3,
+            'berat' => 100,
+            'karbohidrat' => 0,
+            'energi' => 416,
+            'protein' => 46.90,
+            'lemak' => 23.90,
+            'Vit_A' => 12,
+            'Vit_B' => 2.42,
+            'Vit_C' => 0,
+            'Kalsium' => 346,
+            'Zat_Besi' => 0.90,
+            'Zink' => 0.20,
+            'Tembaga' => 0,
+            'serat' => 0,
+            'fosfor' => 654,
+            'air' => 44.70,
+            'natrium' => 54,
+            'kalium' => 278.90,
+        ]);
+        Nutrition::create([
+            'id_makanan' => 4,
+            'berat' => 100,
+            'karbohidrat' => 11.20,
+            'energi' => 45,
+            'protein' => 0.9,
+            'lemak' => 0.2,
+            'Vit_A' => 0,
+            'Vit_B' => 0.31,
+            'Vit_C' => 49,
+            'Kalsium' => 33,
+            'Zat_Besi' => 0.40,
+            'Zink' => 0.20,
+            'Tembaga' => 160,
+            'serat' => 1.40,
+            'fosfor' => 23,
+            'air' => 87.20,
+            'natrium' => 4,
+            'kalium' => 472.10,
+        ]);
+        Nutrition::create([
+            'id_makanan' => 5,
+            'berat' => 100,
+            'karbohidrat' => 39.80,
+            'energi' => 180,
+            'protein' => 3,
+            'lemak' =>0.30,
+            'Vit_A' => 0,
+            'Vit_B' => 2.75,
+            'Vit_C' => 0,
+            'Kalsium' => 25,
+            'Zat_Besi' => 0.40,
+            'Zink' => 0.60,
+            'Tembaga' => 100,
+            'serat' => 0.20,
+            'fosfor' => 27,
+            'air' => 56.70,
+            'natrium' => 1,
+            'kalium' => 38,
+        ]);
+        Nutrition::create([
+            'id_makanan' => 6,
+            'berat' => 100,
+            'karbohidrat' => 24.30,
+            'energi' => 108,
+            'protein' => 1,
+            'lemak' => 0.80,
+            'Vit_A' => 0,
+            'Vit_B' => 0.66,
+            'Vit_C' => 9,
+            'Kalsium' => 20,
+            'Zat_Besi' => 0.20,
+            'Zink' => 0.20,
+            'Tembaga' => 200,
+            'serat' => 1.90,
+            'fosfor' => 30,
+            'air' => 72.90,
+            'natrium' => 10,
+            'kalium' => 0,
+        ]);
+        Nutrition::create([
+            'id_makanan' => 7,
+            'berat' => 50,
+            'karbohidrat' => 0.90,
+            'energi' => 196,
+            'protein' => 14,
+            'lemak' => 15,
+            'Vit_A' => 77.70,
+            'Vit_B' => 0,
+            'Vit_C' => 0,
+            'Kalsium' => 27.10,
+            'Zat_Besi' => 0.85,
+            'Zink' => 0,
+            'Tembaga' => 0,
+            'serat' => 0,
+            'fosfor' => 0,
+            'air' => 0,
+            'natrium' => 207,
+            'kalium' => 0,
+        ]);
+        Nutrition::create([
+            'id_makanan' => 8,
+            'berat' => 50,
+            'karbohidrat' => 1.10,
+            'energi' => 155,
+            'protein' => 13,
+            'lemak' => 11,
+            'Vit_A' => 0,
+            'Vit_B' => 0,
+            'Vit_C' => 0,
+            'Kalsium' => 0,
+            'Zat_Besi' => 0,
+            'Zink' => 0,
+            'Tembaga' => 0,
+            'serat' => 0,
+            'fosfor' => 0,
+            'air' => 0,
+            'natrium' => 124,
+            'kalium' => 0,
+        ]);
+    }
+}

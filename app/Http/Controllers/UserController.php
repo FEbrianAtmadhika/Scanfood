@@ -65,7 +65,6 @@ class UserController extends Controller
     }
 
     public function dashboard(){
-        $data = User::paginate(1);
         return view('User.page.dashboard');
     }
 }
