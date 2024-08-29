@@ -61,4 +61,6 @@ class Controller extends BaseController
             return redirect()->back()->with('error', 'Terjadi kesalahan saat menghapus hasil deteksi.');
         }
     }
+
+
 }

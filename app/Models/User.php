@@ -22,6 +22,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'berat','tinggi','karbohidrat','energi','protein','lemak','Vit_A','Vit_B','Vit_C','Kalsium','Zat_Besi','Zink','Tembaga','serat','fosfor','air','natrium','kalium'
     ];
 
     /**

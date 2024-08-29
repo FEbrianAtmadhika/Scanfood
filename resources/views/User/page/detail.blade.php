@@ -23,7 +23,7 @@
                     <ul class="list-unstyled">
                         @foreach ($foodResults as $foodResult)
                             <li>
-                                {{ $foodResult->food->nama }} - Berat: {{ str_replace('.', ',', rtrim(rtrim($foodResult->weight, '0'), ',')) }} g
+                                {{ $foodResult->food->nama }} - Berat: {{ str_replace('.', ',', rtrim(rtrim($foodResult->weight, ','))) }} g
                             </li>
                         @endforeach
                     </ul>

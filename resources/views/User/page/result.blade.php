@@ -8,7 +8,7 @@
     <div class="row mb-4">
         <div class="col-md-12">
             <div class="d-flex justify-content-start mb-3">
-                <a href="{{ route('dashboard') }}" class="btn btn-primary" onclick="clearHistory()">Kembali ke Dashboard</a>
+                <a href="{{ route('scan') }}" class="btn btn-primary" onclick="clearHistory()">Kembali ke Dashboard</a>
             </div>
         </div>
     </div>

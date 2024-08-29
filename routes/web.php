@@ -21,7 +21,9 @@ Route::post('/register_submit',[UserController::class, 'register_submit'])->name
 Route::post('/login_submit',[UserController::class , 'login_submit'])->name('login_submit');
 
 Route::middleware(['auth'])->group(function () {
+    Route::post('/user/update',[UserController::class, 'update'])->name('update_user');
     Route::get('/dashboard',[UserController::class, 'dashboard'])->name('dashboard');
+    Route::get('/scan', [UserController::class, 'scan'])->name('scan');
     Route::post('/upload',[imageController::class, 'upload'])->name('upload');
     Route::post('/deteksi',[imageController::class, 'deteksi'])->name('deteksi');
     Route::get('/Result',[imageController::class, 'result'])->name('result');
