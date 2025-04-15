@@ -151,7 +151,7 @@ class imageController extends Controller
             ];
         }, $uniqueClasses);
 
-        return view('User.page.hasil', compact('uniqueImageName', 'classArray'));
+        return view('User.page_2.hasil', compact('uniqueImageName', 'classArray'));
     }
 
     public function deteksi(Request $request)
@@ -226,7 +226,7 @@ class imageController extends Controller
             }
         }
         $foodResults = $result->hasil_makanan()->with('food')->get();
-        return view('User.page.result', [
+        return view('User.page_2.result', [
             'result' => $result,
             'foodResults' => $foodResults,
             'imageName' => $image,

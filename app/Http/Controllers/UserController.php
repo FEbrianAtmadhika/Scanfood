@@ -76,7 +76,7 @@ class UserController extends Controller
         $data->berat = $request->berat;
         $data->tinggi = $request->tinggi;
 
-        $baseWeight = 6;
+        $baseWeight = 13;
         $data->karbohidrat = ($data->berat / $baseWeight) * 215;
         $data->energi = ($data->berat / $baseWeight) * 1350;
         $data->protein = ($data->berat / $baseWeight) * 20;
@@ -113,9 +113,9 @@ class UserController extends Controller
     }
 
     public function dashboard(){
-        return view('User.page.dashboard');
+        return view('user.page_2.dashboard');
     }
     public function scan(){
-        return view('User.page.upload');
+        return view('User.page_2.upload');
     }
 }

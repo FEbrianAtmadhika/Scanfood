@@ -25,13 +25,13 @@ class Controller extends BaseController
 
         $results = Result::where('id_user', Auth::id())->get();
 
-        return view('User.page.history', compact('results'));
+        return view('User.page_2.history', compact('results'));
     }
 
     public function detail($id){
          $result = Result::with('hasil_makanan.food')->findOrFail($id);
 
-         return view('User.page.detail', [
+         return view('User.page_2.detail', [
              'result' => $result,
              'foodResults' => $result->hasil_makanan,
          ]);
